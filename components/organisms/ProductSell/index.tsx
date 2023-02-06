@@ -1,7 +1,5 @@
 import styles from './index.module.css';
 import classNames from 'classnames/bind';
-
-const cx = classNames.bind(styles);
 import CardSell from '@/components/atoms/CardSell';
 import Price from '@/components/atoms/Price';
 import ProductDesc from '@/components/molecules/ProductDesc';
@@ -9,6 +7,8 @@ import ProductButton from '@/components/molecules/ProductButton';
 import LargeImage from '@/components/atoms/LargeImage';
 import headphones from '@/public/img/img_headphones.png';
 import icPlus from '@/public/icon/ic_plus.svg';
+
+const cx = classNames.bind(styles);
 
 const ProductSell = () => {
     const icClick = () => {

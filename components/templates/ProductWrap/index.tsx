@@ -1,16 +1,17 @@
 import styles from './index.module.css';
 import classNames from 'classnames/bind';
-import { ReactNode } from 'react';
+import ProductItem from "@/components/organisms/ProductItem";
 
 const cx = classNames.bind(styles);
 
 interface IProductWrap {
     direction: string;
-    children: ReactNode;
 }
 
-const ProductWrap = ({ direction, children }: IProductWrap) => {
-    return <div className={cx('wrap', direction)}>{children}</div>;
+const ProductWrap = ({ direction }: IProductWrap) => {
+    return <div className={cx('wrap', direction)}>
+        <ProductItem />
+    </div>;
 };
 
 export default ProductWrap;
