@@ -1,0 +1,27 @@
+.btn {
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white);
+    line-height: 1;
+}
+
+.btn.small {
+    min-width: 80px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.btn.medium {
+    min-width: 102px;
+    height: 43px;
+    line-height: 43px;
+}
+
+.btn.default {
+    background-color: var(--blue);
+}
+
+.btn.destructive {
+    background-color: var(--error);
+}
