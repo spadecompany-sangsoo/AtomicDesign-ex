@@ -12,7 +12,7 @@ export default function Layout({ children }: ILayoutProps) {
 
   useEffect(() => {
     const handlerReneder = () => {
-      container.current!.style.height = `${
+      container.current!.style.minHeight = `${
         window.innerHeight - (header.current!.offsetHeight + footer.current!.offsetHeight)
       }px`;
     };

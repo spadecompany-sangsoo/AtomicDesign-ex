@@ -6,7 +6,7 @@ import { Product } from '@/@types/product/product';
 
 const Index = () => {
   const { data, isLoading } = useQuery<Product[]>(['product'], getProduct);
-  return <Layout>{data ? <ProductWrap data={data} direction="col" type="sell" /> : null}</Layout>;
+  return <Layout>{data ? <ProductWrap data={data} direction="col" type="white" /> : null}</Layout>;
 };
 
 export default Index;
