@@ -1,0 +1,23 @@
+.card {
+  padding: 24px;
+}
+
+.card.transparent {
+  border-radius: 25px;
+  border: 1px solid var(--lightGray);
+}
+
+.card.white {
+  border-radius: 25px;
+  background-color: var(--white);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.05);
+}
+
+.card.sell {
+  background-color: var(--white);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.05);
+}
+
+.price_sell {
+  margin: 22px 0;
+}

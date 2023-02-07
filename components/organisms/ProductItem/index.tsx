@@ -1,31 +1,37 @@
-import headphones from "@/public/img/img_headphones.png";
-import LargeImage from "@/components/atoms/LargeImage";
+import headphones from '@/public/img/img_headphones.png';
+import LargeImage from '@/components/atoms/LargeImage';
 import styles from './index.module.css';
 import classNames from 'classnames/bind';
-import ProductDesc from "@/components/molecules/ProductDesc";
-import Price from "@/components/atoms/Price";
-import ProductButton from "@/components/molecules/ProductButton";
-import icPlus from "@/public/icon/ic_plus.svg";
+import ProductDesc from '@/components/molecules/ProductDesc';
+import Price from '@/components/atoms/Price';
+import ProductButton from '@/components/molecules/ProductButton';
+import icPlus from '@/public/icon/ic_plus.svg';
+import { Product } from '@/@types/product/product';
 
 const cx = classNames.bind(styles);
 
-const ProductItem = () => {
-    const icClick = () => {
-        alert('icClick');
-    };
+interface IProductItem {
+  type: 'transparent' | 'white' | 'sell';
+  data: Product;
+}
 
-    const btnOnClick = () => {
-        alert('btnOnClick');
-    };
+const ProductItem = ({ type, data }: IProductItem) => {
+  const icClick = () => {
+    alert('icClick');
+  };
 
-    return <div className={cx('card')}>
-        <LargeImage imgSrc={headphones} imgAlt="headphones" />
-        <ProductDesc
-            title="iPhone X"
-            desc="With Apple Trade In, you can get credit towards a new iPhone when you trade in your eligible smartphone.4 It’s good for you and the planet."
-        />
-        <Price price="8302.00" className={cx('price_sell')} />
-        <ProductButton
+  const btnOnClick = () => {
+    alert('btnOnClick');
+  };
+
+  return (
+    <div className={cx('card', type)}>
+      <LargeImage imgSrc={headphones} imgAlt="headphones" />
+      <ProductDesc title={data.name} desc={data.desc} />
+      {type === 'sell' ? (
+        <>
+          <Price price="8302.00" className={cx('price_sell')} />
+          <ProductButton
             icSize="medium"
             icState="default"
             icDsiabled={false}
@@ -37,8 +43,11 @@ const ProductItem = () => {
             btnState="default"
             btnDsiabled={false}
             btnOnClick={btnOnClick}
-        />
+          />
+        </>
+      ) : null}
     </div>
-}
+  );
+};
 
 export default ProductItem;
