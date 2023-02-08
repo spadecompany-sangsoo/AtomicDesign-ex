@@ -11,9 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <RecoilRoot>
       <QueryClientProvider client={client}>
-        <div className="wrapper">
-          <Component {...pageProps} />
-        </div>
+        <Component {...pageProps} />
         <ReactQueryDevtools />
       </QueryClientProvider>
     </RecoilRoot>
