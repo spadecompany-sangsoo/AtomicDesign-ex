@@ -1,0 +1,8 @@
+.board_head {
+  display: flex;
+  gap: 0 4px;
+}
+
+.board_head.mx-20 {
+  margin: 20px 0;
+}
