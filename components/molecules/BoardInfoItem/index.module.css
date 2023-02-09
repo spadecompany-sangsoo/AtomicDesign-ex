@@ -1,0 +1,7 @@
+.item_wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px 0;
+  padding: 20px;
+  border: 1px solid var(--lightGray);
+}

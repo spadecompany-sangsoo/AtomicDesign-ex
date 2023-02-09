@@ -1,0 +1,10 @@
+.item_wrap {
+  padding: 20px;
+  background-color: var(--black);
+  border-radius: 4px;
+}
+
+.item_wrap .desc {
+  margin-top: 4px;
+  margin-bottom: 26px;
+}

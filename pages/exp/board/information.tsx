@@ -18,6 +18,7 @@ const InformationPage = () => {
           </BoardTemplates.BoardHead>
           <BoardTemplates.BoardList
             data={data}
+            className="information_wrap"
             renderListItem={(item) => <BoardInfoItem item={item as IInformation} key={item.id} />}
           />
         </BoardTemplates>

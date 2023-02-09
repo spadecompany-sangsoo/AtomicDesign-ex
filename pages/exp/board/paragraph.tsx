@@ -12,12 +12,13 @@ const ParagraphPage = () => {
     <Layout>
       {isSuccess ? (
         <BoardTemplates>
-          <BoardTemplates.BoardHead>
+          <BoardTemplates.BoardHead className="mx-20">
             <BoardTemplates.BoardHead.BoardTitle text="Paragraph" />
             <BoardTemplates.BoardHead.BoardLengthTxt length={data.length} />
           </BoardTemplates.BoardHead>
           <BoardTemplates.BoardList
             data={data}
+            className="paragraph_wrap"
             renderListItem={(item) => (
               <BoardParagraphItem item={item as IParagraph} key={item.id} />
             )}

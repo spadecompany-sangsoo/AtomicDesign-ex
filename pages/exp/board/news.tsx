@@ -12,12 +12,13 @@ const NewsPage = () => {
     <Layout>
       {isSuccess ? (
         <BoardTemplates>
-          <BoardTemplates.BoardHead>
+          <BoardTemplates.BoardHead className="mx-20">
             <BoardTemplates.BoardHead.BoardTitle text="News" />
             <BoardTemplates.BoardHead.BoardLengthTxt length={data.length} />
           </BoardTemplates.BoardHead>
           <BoardTemplates.BoardList
             data={data}
+            className="news_wrap"
             renderListItem={(item) => <BoardNewsItem item={item as INews} key={item.id} />}
           />
         </BoardTemplates>
