@@ -1,0 +1,6 @@
+.product_head {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-top: 2px solid var(--black);
+  border-bottom: 2px solid var(--black);
+}

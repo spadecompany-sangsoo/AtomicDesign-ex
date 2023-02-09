@@ -17,6 +17,9 @@ const Exp = () => {
         <Link href="/exp/product" legacyBehavior>
           <a>product - product</a>
         </Link>
+        <Link href="/exp/product/sell" legacyBehavior>
+          <a>product - sell</a>
+        </Link>
       </nav>
       <style jsx>{`
         nav a {

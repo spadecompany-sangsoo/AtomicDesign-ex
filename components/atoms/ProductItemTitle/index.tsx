@@ -3,13 +3,13 @@ import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
-interface ITitle {
+interface IProductItemTitle {
   title?: string;
   className?: string;
 }
 
-const Title = ({ title, className }: ITitle) => {
+const ProductItemTitle = ({ title, className }: IProductItemTitle) => {
   return <h6 className={cx('title', className)}>{title}</h6>;
 };
 
-export default Title;
+export default ProductItemTitle;

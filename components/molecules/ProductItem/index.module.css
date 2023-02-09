@@ -1,0 +1,18 @@
+.item {
+  padding: 24px;
+}
+
+.item .title {
+  margin-bottom: 9px;
+}
+
+.item.transparent {
+  border-radius: 25px;
+  border: 1px solid var(--lightGray);
+}
+
+.item.white {
+  border-radius: 25px;
+  background-color: var(--white);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.05);
+}
