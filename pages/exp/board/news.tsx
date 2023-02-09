@@ -12,7 +12,7 @@ const NewsPage = () => {
     <Layout>
       {isSuccess ? (
         <BoardTemplates>
-          <BoardTemplates.BoardHead className="mx-20">
+          <BoardTemplates.BoardHead>
             <BoardTemplates.BoardHead.BoardTitle text="News" />
             <BoardTemplates.BoardHead.BoardLengthTxt length={data.length} />
           </BoardTemplates.BoardHead>

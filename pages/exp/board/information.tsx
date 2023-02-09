@@ -12,7 +12,7 @@ const InformationPage = () => {
     <Layout>
       {isSuccess ? (
         <BoardTemplates>
-          <BoardTemplates.BoardHead className="mx-20">
+          <BoardTemplates.BoardHead>
             <BoardTemplates.BoardHead.BoardTitle text="Information" />
             <BoardTemplates.BoardHead.BoardLengthTxt length={data.length} />
           </BoardTemplates.BoardHead>
