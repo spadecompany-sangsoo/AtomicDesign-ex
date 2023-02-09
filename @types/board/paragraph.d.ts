@@ -1,4 +1,4 @@
-export interface INotice {
+export interface IParagraph {
   id: number;
   title: string;
   desc: string;

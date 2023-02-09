@@ -3,32 +3,32 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 const information = [
   {
     id: 0,
-    title: 'title1',
-    desc: 'desc1',
+    title: 'information1',
+    desc: 'information1',
     category: 'css',
   },
   {
     id: 1,
-    title: 'title2',
-    desc: 'desc2',
+    title: 'information2',
+    desc: 'information2',
     category: 'css',
   },
   {
     id: 2,
-    title: 'title3',
-    desc: 'desc3',
+    title: 'information3',
+    desc: 'information3',
     category: 'javascript',
   },
   {
     id: 3,
-    title: 'title4',
-    desc: 'desc4',
+    title: 'information4',
+    desc: 'information4',
     category: 'react',
   },
   {
     id: 4,
-    title: 'title5',
-    desc: 'desc5',
+    title: 'information5',
+    desc: 'information5',
     category: 'react',
   },
 ];

@@ -6,24 +6,23 @@ const Exp = () => {
     <Layout>
       <nav>
         <Link href="/exp/board/information" legacyBehavior>
-          <a>information</a>
+          <a>board - information</a>
         </Link>
         <Link href="/exp/board/news/" legacyBehavior>
-          <a>news</a>
+          <a>board - news</a>
         </Link>
         <Link href="/exp/board/paragraph" legacyBehavior>
-          <a>paragraph</a>
-        </Link>
-        <Link href="/exp/dialog" legacyBehavior>
-          <a>dialog</a>
+          <a>board - paragraph</a>
         </Link>
         <Link href="/exp/product" legacyBehavior>
-          <a>product</a>
+          <a>product - product</a>
         </Link>
       </nav>
       <style jsx>{`
         nav a {
           display: block;
+          padding: 10px 0;
+          border-bottom: 1px solid #000;
         }
       `}</style>
     </Layout>

@@ -13,12 +13,12 @@ const InformationPage = () => {
       {isSuccess ? (
         <BoardTemplates>
           <BoardTemplates.BoardHead>
-            <BoardTemplates.BoardHead.BoardTitle text="information" />
+            <BoardTemplates.BoardHead.BoardTitle text="Information" />
             <BoardTemplates.BoardHead.BoardLengthTxt length={data.length} />
           </BoardTemplates.BoardHead>
           <BoardTemplates.BoardList
             data={data}
-            renderListItem={(item) => <BoardInfoItem item={item} key={item.id} />}
+            renderListItem={(item) => <BoardInfoItem item={item as IInformation} key={item.id} />}
           />
         </BoardTemplates>
       ) : null}
