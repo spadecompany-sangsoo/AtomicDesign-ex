@@ -1,3 +1,7 @@
+.is_scrollFix {
+  overflow: hidden;
+}
+
 .wrapper {
   max-width: 1158px;
   margin: 0 auto;

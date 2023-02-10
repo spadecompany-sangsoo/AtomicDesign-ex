@@ -15,7 +15,10 @@ const ModalTemplates = ({ children, isOpen = false }: IModalTemplates) => {
   const portal = typeof window !== 'undefined' && document.getElementById('modal');
 
   if (!isOpen) {
+    document.body.classList.remove('is_scrollFix');
     return null;
+  } else {
+    document.body.classList.add('is_scrollFix');
   }
 
   return portal && children
