@@ -4,6 +4,7 @@ import { useQuery } from '@tanstack/react-query';
 import { IProduct } from '@/@types/product/product';
 import ProductItem from '@/components/molecules/ProductItem';
 import ProductTemplates from '@/components/templates/ProductTemplates';
+import headphones from '@/public/img/img_headphones.png';
 
 const ProductPage = () => {
   const { data, isLoading, isSuccess } = useQuery<IProduct[]>(['product'], getProduct);
@@ -17,7 +18,13 @@ const ProductPage = () => {
           <ProductTemplates.ProductList
             data={data}
             direction="col"
-            renderListItem={(item) => <ProductItem item={item} key={item.id} type="white" />}
+            renderListItem={(item) => (
+              <ProductItem key={item.id}>
+                <ProductItem.ProductLargeImage imgSrc={headphones} imgAlt={item.name} />
+                <ProductItem.ProductItemTitle title={item.name} />
+                <ProductItem.ProductItemDesc desc={item.desc} />
+              </ProductItem>
+            )}
           />
         </ProductTemplates>
       ) : null}

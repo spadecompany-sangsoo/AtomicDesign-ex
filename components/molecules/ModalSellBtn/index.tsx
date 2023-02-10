@@ -1,4 +1,3 @@
-import IconButton from '@/components/atoms/IconButton';
 import Button from '@/components/atoms/Button';
 import styles from './index.module.css';
 import classNames from 'classnames/bind';
@@ -6,15 +5,14 @@ import { ReactElement } from 'react';
 
 const cx = classNames.bind(styles);
 
-interface IProductButton {
+interface IModalSellBtn {
   children: ReactElement | ReactElement[];
 }
 
-const ProductButton = ({ children }: IProductButton) => {
+const ModalSellBtn = ({ children }: IModalSellBtn) => {
   return <div className={cx('wrap')}>{children}</div>;
 };
 
-export default ProductButton;
+export default ModalSellBtn;
 
-ProductButton.IconButton = IconButton;
-ProductButton.Button = Button;
+ModalSellBtn.Button = Button;

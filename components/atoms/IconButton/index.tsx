@@ -5,32 +5,24 @@ import Image, { StaticImageData } from 'next/image';
 
 const cx = classNames.bind(styles);
 
+type ISize = 'small' | 'medium';
+type TState = 'default' | 'destructive';
+
 interface IIconButton {
-    icSize: string;
-    icState: string;
-    icDsiabled: boolean;
-    icOnClick: () => void;
-    icSrc: HTMLImageElement | string | StaticImageData;
-    icAlt: string;
+  icSize: ISize;
+  icState: TState;
+  icDsiabled: boolean;
+  icOnClick: () => void;
+  icSrc: HTMLImageElement | string | StaticImageData;
+  icAlt: string;
 }
 
-const IconButton = ({
-    icSize,
-    icState,
-    icDsiabled,
-    icOnClick,
-    icSrc,
-    icAlt,
-}: IIconButton) => {
-    return (
-        <button
-            className={cx('btn', icSize, icState)}
-            disabled={icDsiabled}
-            onClick={icOnClick}
-        >
-            <Image src={icSrc} alt={icAlt} />
-        </button>
-    );
+const IconButton = ({ icSize, icState, icDsiabled, icOnClick, icSrc, icAlt }: IIconButton) => {
+  return (
+    <button className={cx('btn', icSize, icState)} disabled={icDsiabled} onClick={icOnClick}>
+      <Image src={icSrc} alt={icAlt} />
+    </button>
+  );
 };
 
 export default IconButton;

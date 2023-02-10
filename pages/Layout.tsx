@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
+import React, { ReactNode, useEffect, useRef } from 'react';
 
 interface ILayoutProps {
   children: ReactNode;
