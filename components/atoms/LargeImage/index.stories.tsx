@@ -1,6 +1,6 @@
 import LargeImage from './index';
 import { ComponentStory } from '@storybook/react';
-import headphones from '../../../public/img/img_headphones.png';
+import headphones from '/public/img/img_headphones.png';
 
 export default {
   title: 'ATOMS/LargeImage',

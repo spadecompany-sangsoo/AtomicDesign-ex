@@ -5,7 +5,6 @@ import { IProduct } from '@/@types/product/product';
 import ProductTemplates from '@/components/templates/ProductTemplates';
 import ProductItem from '@/components/molecules/ProductItem';
 import headphones from '@/public/img/img_headphones.png';
-import icPlus from '@/public/icon/ic_plus.svg';
 import React, { useState } from 'react';
 import ModalTemplates from '@/components/templates/ModalTemplates';
 import TextXXLarge from '@/components/atoms/Text/TextXXLarge';
@@ -55,9 +54,7 @@ const ProductSellPage = () => {
                     <ProductItem.ProductButton.IconButton
                       icSize={'medium'}
                       icState={'default'}
-                      icDsiabled={false}
-                      icSrc={icPlus}
-                      icAlt="plus icon"
+                      icDisabled={false}
                       icOnClick={icClick}
                     />
                     <ProductItem.ProductButton.Button

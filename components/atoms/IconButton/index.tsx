@@ -1,7 +1,8 @@
 import styles from './index.module.css';
 import classNames from 'classnames/bind';
-import { ReactNode } from 'react';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
+import icPlus from '/public/icon/ic_plus.svg';
+import icPlusDestructive from '/public/icon/ic_plus_destructive.svg';
 
 const cx = classNames.bind(styles);
 
@@ -11,16 +12,14 @@ type TState = 'default' | 'destructive';
 interface IIconButton {
   icSize: ISize;
   icState: TState;
-  icDsiabled: boolean;
+  icDisabled: boolean;
   icOnClick: () => void;
-  icSrc: HTMLImageElement | string | StaticImageData;
-  icAlt: string;
 }
 
-const IconButton = ({ icSize, icState, icDsiabled, icOnClick, icSrc, icAlt }: IIconButton) => {
+const IconButton = ({ icSize, icState, icDisabled, icOnClick }: IIconButton) => {
   return (
-    <button className={cx('btn', icSize, icState)} disabled={icDsiabled} onClick={icOnClick}>
-      <Image src={icSrc} alt={icAlt} />
+    <button className={cx('btn', icSize, icState)} disabled={icDisabled} onClick={icOnClick}>
+      <Image src={icState === 'default' ? icPlus : icPlusDestructive} alt="plus 아이콘" />
     </button>
   );
 };
