@@ -1,0 +1,9 @@
+.TextXXLarge {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.TextXXLarge.price_sell {
+  margin: 20px 0;
+  color: var(--blue);
+}

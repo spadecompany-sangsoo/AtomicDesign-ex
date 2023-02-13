@@ -1,14 +1,11 @@
 import styles from './index.module.css';
 import classNames from 'classnames/bind';
-import { IProduct } from '@/@types/product/product';
-import ProductContent from '@/components/molecules/ProductContent';
-import headphones from '@/public/img/img_headphones.png';
 import LargeImage from '@/components/atoms/LargeImage';
-import ProductItemTitle from '@/components/atoms/ProductItemTitle';
-import ProductItemDesc from '@/components/atoms/ProductItemDesc';
-import Price from '@/components/atoms/Price';
+import TitleMedium from '@/components/atoms/Title/TitleMedium';
+import TextXXLarge from '@/components/atoms/Text/TextXXLarge';
 import ProductButton from '@/components/molecules/ProductButton';
 import { ReactElement } from 'react';
+import TextMedium from '@/components/atoms/Text/TextMedium';
 
 const cx = classNames.bind(styles);
 
@@ -24,7 +21,7 @@ const ProductItem = ({ type = 'white', children }: IProductItem) => {
 export default ProductItem;
 
 ProductItem.ProductLargeImage = LargeImage;
-ProductItem.ProductItemTitle = ProductItemTitle;
-ProductItem.ProductItemDesc = ProductItemDesc;
-ProductItem.ProductPrice = Price;
+ProductItem.TitleMedium = TitleMedium;
+ProductItem.TextMedium = TextMedium;
+ProductItem.TextXXLarge = TextXXLarge;
 ProductItem.ProductButton = ProductButton;

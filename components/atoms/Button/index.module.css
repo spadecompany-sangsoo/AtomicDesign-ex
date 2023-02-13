@@ -1,5 +1,6 @@
 .btn {
   border-radius: 9px;
+  padding: 0 12px;
   font-size: 16px;
   font-weight: 500;
   color: var(--white);
@@ -19,7 +20,10 @@
 }
 
 .btn.fr_1 {
+  width: 100%;
   flex-grow: 1;
+  height: 43px;
+  line-height: 43px;
 }
 
 .btn.default {
@@ -28,4 +32,9 @@
 
 .btn.destructive {
   background-color: var(--error);
+}
+
+.btn[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
 }

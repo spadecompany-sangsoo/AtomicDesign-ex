@@ -13,7 +13,7 @@ const ProductPage = () => {
       {isSuccess ? (
         <ProductTemplates>
           <ProductTemplates.ProductHead>
-            <ProductTemplates.ProductHead.ProductTitle title="상품 리스트" />
+            <ProductTemplates.ProductHead.TitleXXLarge title="상품 리스트" />
           </ProductTemplates.ProductHead>
           <ProductTemplates.ProductList
             data={data}
@@ -21,8 +21,8 @@ const ProductPage = () => {
             renderListItem={(item) => (
               <ProductItem key={item.id}>
                 <ProductItem.ProductLargeImage imgSrc={headphones} imgAlt={item.name} />
-                <ProductItem.ProductItemTitle title={item.name} />
-                <ProductItem.ProductItemDesc desc={item.desc} />
+                <ProductItem.TitleMedium title={item.name} />
+                <ProductItem.TextMedium text={item.desc} className="product_desc" />
               </ProductItem>
             )}
           />

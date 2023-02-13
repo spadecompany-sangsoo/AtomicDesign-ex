@@ -1,9 +1,9 @@
 import styles from './index.module.css';
 import classNames from 'classnames/bind';
-import BoardNewsItemTitle from '@/components/atoms/BoardNewsItemTitle';
-import BoardNewsItemDesc from '@/components/atoms/BoardNewsItemDesc';
+import TitleLarge from '@/components/atoms/Title/TitleLarge';
+import TextMedium from '@/components/atoms/Text/TextMedium';
 import { INews } from '@/@types/board/news';
-import BoardNewsItemDate from '@/components/atoms/BoardNewsItemDate';
+import TextLarge from '@/components/atoms/Text/TextLarge';
 
 interface IBoardNewsItem {
   item: INews;
@@ -14,10 +14,10 @@ const cx = classNames.bind(styles);
 const BoardNewsItem = ({ item }: IBoardNewsItem) => {
   return (
     <div className={cx('item_wrap')}>
-      <BoardNewsItemDate date={item.date} />
+      <TextLarge text={item.date} />
       <div className={cx('item_txt')}>
-        <BoardNewsItemTitle title={item.title} />
-        <BoardNewsItemDesc desc={item.desc} />
+        <TitleLarge title={item.title} />
+        <TextMedium text={item.desc} />
       </div>
     </div>
   );

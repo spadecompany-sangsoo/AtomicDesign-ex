@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import styles from './index.module.css';
 import classNames from 'classnames/bind';
-import ProductTitle from '@/components/atoms/ProductTitle';
+import TitleXXLarge from '@/components/atoms/Title/TitleXXLarge';
 
 const cx = classNames.bind(styles);
 
@@ -16,4 +16,4 @@ const ProductHead = ({ children, className }: IProductHead) => {
 
 export default ProductHead;
 
-ProductHead.ProductTitle = ProductTitle;
+ProductHead.TitleXXLarge = TitleXXLarge;

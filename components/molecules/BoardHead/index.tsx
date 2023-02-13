@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
-import BoardTitle from '@/components/atoms/BoardTitle';
-import BoardLengthTxt from '@/components/atoms/BoardLengthTxt';
+import TitleXLarge from '@/components/atoms/Title/TitleXLarge';
+import TextXLarge from '@/components/atoms/Text/TextXLarge';
 import styles from './index.module.css';
 import classNames from 'classnames/bind';
 
@@ -17,5 +17,5 @@ const BoardHead = ({ children, className }: IBoardHead) => {
 
 export default BoardHead;
 
-BoardHead.BoardTitle = BoardTitle;
-BoardHead.BoardLengthTxt = BoardLengthTxt;
+BoardHead.TitleXLarge = TitleXLarge;
+BoardHead.TextXLarge = TextXLarge;

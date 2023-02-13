@@ -1,9 +1,0 @@
-.price {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--blue);
-}
-
-.price.mx-20 {
-  margin: 20px 0;
-}

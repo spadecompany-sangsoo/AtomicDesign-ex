@@ -4,7 +4,12 @@
   border-radius: 4px;
 }
 
-.item_wrap .desc {
+.item_wrap .title {
+  color: var(--lightGray);
+}
+
+.item_wrap .board_paragraph_desc {
   margin-top: 4px;
   margin-bottom: 26px;
+  color: var(--lightGray);
 }

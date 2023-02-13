@@ -1,0 +1,7 @@
+.TextXSmall {
+  font-size: 12px;
+}
+
+.TextXSmall.write {
+  color: var(--lightGray);
+}

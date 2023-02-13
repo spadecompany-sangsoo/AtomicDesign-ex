@@ -13,8 +13,8 @@ const InformationPage = () => {
       {isSuccess ? (
         <BoardTemplates>
           <BoardTemplates.BoardHead>
-            <BoardTemplates.BoardHead.BoardTitle text="Information" />
-            <BoardTemplates.BoardHead.BoardLengthTxt length={data.length} />
+            <BoardTemplates.BoardHead.TitleXLarge title="Information" />
+            <BoardTemplates.BoardHead.TextXLarge text={data.length} />
           </BoardTemplates.BoardHead>
           <BoardTemplates.BoardList
             data={data}

@@ -1,0 +1,9 @@
+.TextMedium {
+  font-size: 16px;
+}
+
+.TextMedium.product_desc {
+  font-weight: 500;
+  color: var(--gray);
+  line-height: 1.625;
+}

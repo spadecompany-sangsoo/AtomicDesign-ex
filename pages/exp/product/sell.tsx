@@ -8,6 +8,7 @@ import headphones from '@/public/img/img_headphones.png';
 import icPlus from '@/public/icon/ic_plus.svg';
 import React, { useState } from 'react';
 import ModalTemplates from '@/components/templates/ModalTemplates';
+import TextXXLarge from '@/components/atoms/Text/TextXXLarge';
 
 const ProductSellPage = () => {
   const { data, isLoading, isSuccess } = useQuery<IProduct[]>(['product'], getProduct);
@@ -39,7 +40,7 @@ const ProductSellPage = () => {
         <>
           <ProductTemplates>
             <ProductTemplates.ProductHead>
-              <ProductTemplates.ProductHead.ProductTitle title="상품 팔기" />
+              <ProductTemplates.ProductHead.TitleXXLarge title="상품 팔기" />
             </ProductTemplates.ProductHead>
             <ProductTemplates.ProductList
               data={data}
@@ -47,9 +48,9 @@ const ProductSellPage = () => {
               renderListItem={(item) => (
                 <ProductItem key={item.id}>
                   <ProductItem.ProductLargeImage imgSrc={headphones} imgAlt={item.name} />
-                  <ProductItem.ProductItemTitle title={item.name} />
-                  <ProductItem.ProductItemDesc desc={item.desc} />
-                  <ProductItem.ProductPrice price={item.price} className={'mx-20'} />
+                  <ProductItem.TitleMedium title={item.name} />
+                  <ProductItem.TextMedium text={item.desc} />
+                  <ProductItem.TextXXLarge text={item.price} className={'price_sell'} />
                   <ProductItem.ProductButton>
                     <ProductItem.ProductButton.IconButton
                       icSize={'medium'}

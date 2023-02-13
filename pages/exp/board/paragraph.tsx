@@ -13,8 +13,8 @@ const ParagraphPage = () => {
       {isSuccess ? (
         <BoardTemplates>
           <BoardTemplates.BoardHead>
-            <BoardTemplates.BoardHead.BoardTitle text="Paragraph" />
-            <BoardTemplates.BoardHead.BoardLengthTxt length={data.length} />
+            <BoardTemplates.BoardHead.TitleXLarge title="Paragraph" />
+            <BoardTemplates.BoardHead.TextXLarge text={data.length} />
           </BoardTemplates.BoardHead>
           <BoardTemplates.BoardList
             data={data}
