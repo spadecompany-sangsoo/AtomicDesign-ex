@@ -1,7 +1,5 @@
 import IconButton from './index';
 import { ComponentStory } from '@storybook/react';
-import icPlus from '/public/icon/ic_plus.svg';
-import Image from 'next/image';
 
 export default {
   title: 'ATOMS/IconButton',
@@ -25,7 +23,7 @@ export default {
   },
 };
 
-const Template: ComponentStory<typeof IconButton> = (agrs) => <IconButton {...agrs}></IconButton>;
+const Template: ComponentStory<typeof IconButton> = (args) => <IconButton {...args}></IconButton>;
 
 export const Small = Template.bind({});
 Small.args = {
@@ -34,8 +32,8 @@ Small.args = {
   icDisabled: false,
 };
 
-export const medium = Template.bind({});
-medium.args = {
+export const Medium = Template.bind({});
+Medium.args = {
   icSize: 'medium',
   icState: 'default',
   icDisabled: false,

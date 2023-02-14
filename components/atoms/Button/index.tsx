@@ -11,16 +11,23 @@ interface IButton {
   text: string;
   btnSize: ISize;
   btnState: IState;
-  btnDsiabled: boolean;
+  btnDisabled: boolean;
   btnOnClick: () => void;
   className?: string;
 }
 
-const Button = ({ text, btnSize, btnState, btnDsiabled, btnOnClick, className }: IButton) => {
+const Button: React.FC<IButton> = ({
+  text,
+  btnSize,
+  btnState,
+  btnDisabled,
+  btnOnClick,
+  className,
+}: IButton) => {
   return (
     <button
       className={cx('btn', btnSize, btnState, className)}
-      disabled={btnDsiabled}
+      disabled={btnDisabled}
       onClick={btnOnClick}
     >
       {text}

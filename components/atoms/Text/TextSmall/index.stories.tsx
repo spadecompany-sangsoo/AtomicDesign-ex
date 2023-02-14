@@ -12,8 +12,8 @@ export default {
   },
 };
 
-export const Default: ComponentStory<typeof TextSmall> = (agrs) => (
-  <TextSmall {...agrs}></TextSmall>
+export const Default: ComponentStory<typeof TextSmall> = (args) => (
+  <TextSmall {...args}></TextSmall>
 );
 
 Default.args = {

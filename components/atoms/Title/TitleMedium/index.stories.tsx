@@ -12,8 +12,8 @@ export default {
   },
 };
 
-export const Default: ComponentStory<typeof TitleMedium> = (agrs) => (
-  <TitleMedium {...agrs}></TitleMedium>
+export const Default: ComponentStory<typeof TitleMedium> = (args) => (
+  <TitleMedium {...args}></TitleMedium>
 );
 
 Default.args = {

@@ -15,8 +15,8 @@ export default {
   },
 };
 
-export const Default: ComponentStory<typeof LargeImage> = (agrs) => (
-  <LargeImage {...agrs}></LargeImage>
+export const Default: ComponentStory<typeof LargeImage> = (args) => (
+  <LargeImage {...args}></LargeImage>
 );
 
 Default.args = {

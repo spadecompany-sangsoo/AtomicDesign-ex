@@ -7,7 +7,6 @@ import ProductItem from '@/components/molecules/ProductItem';
 import headphones from '@/public/img/img_headphones.png';
 import React, { useState } from 'react';
 import ModalTemplates from '@/components/templates/ModalTemplates';
-import TextXXLarge from '@/components/atoms/Text/TextXXLarge';
 
 const ProductSellPage = () => {
   const { data, isLoading, isSuccess } = useQuery<IProduct[]>(['product'], getProduct);
@@ -61,7 +60,7 @@ const ProductSellPage = () => {
                       text="Sell"
                       btnSize={'fr_1'}
                       btnState={'default'}
-                      btnDsiabled={false}
+                      btnDisabled={false}
                       btnOnClick={() => btnSellHandler(item.id)}
                     />
                   </ProductItem.ProductButton>
@@ -77,14 +76,14 @@ const ProductSellPage = () => {
                   text="cancel"
                   btnSize={'medium'}
                   btnState={'destructive'}
-                  btnDsiabled={false}
+                  btnDisabled={false}
                   btnOnClick={btnCancelHandler}
                 />
                 <ModalTemplates.ModalSell.ModalSellBtn.Button
                   text="Sell"
                   btnSize={'medium'}
                   btnState={'default'}
-                  btnDsiabled={false}
+                  btnDisabled={false}
                   btnOnClick={btnConfirmHandler}
                 />
               </ModalTemplates.ModalSell.ModalSellBtn>

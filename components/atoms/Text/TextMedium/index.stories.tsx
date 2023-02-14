@@ -17,8 +17,8 @@ export default {
   },
 };
 
-export const Defalut: ComponentStory<typeof TextMedium> = (agrs) => (
-  <TextMedium {...agrs}></TextMedium>
+export const Defalut: ComponentStory<typeof TextMedium> = (args) => (
+  <TextMedium {...args}></TextMedium>
 );
 
 Defalut.args = {

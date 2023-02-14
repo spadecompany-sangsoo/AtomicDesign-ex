@@ -17,8 +17,8 @@ export default {
   },
 };
 
-export const Defalut: ComponentStory<typeof TextXXLarge> = (agrs) => (
-  <TextXXLarge {...agrs}></TextXXLarge>
+export const Defalut: ComponentStory<typeof TextXXLarge> = (args) => (
+  <TextXXLarge {...args}></TextXXLarge>
 );
 
 Defalut.args = {

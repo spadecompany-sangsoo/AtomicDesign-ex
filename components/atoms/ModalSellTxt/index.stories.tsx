@@ -12,8 +12,8 @@ export default {
   },
 };
 
-export const Default: ComponentStory<typeof ModalSellTxt> = (agrs) => (
-  <ModalSellTxt {...agrs}></ModalSellTxt>
+export const Default: ComponentStory<typeof ModalSellTxt> = (args) => (
+  <ModalSellTxt {...args}></ModalSellTxt>
 );
 
 Default.args = {

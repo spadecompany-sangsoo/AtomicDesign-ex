@@ -6,7 +6,7 @@ import { ReactElement } from 'react';
 const cx = classNames.bind(styles);
 
 interface IModalSellBtn {
-  children: ReactElement | ReactElement[];
+  children?: ReactElement | ReactElement[];
 }
 
 const ModalSellBtn = ({ children }: IModalSellBtn) => {
@@ -15,4 +15,5 @@ const ModalSellBtn = ({ children }: IModalSellBtn) => {
 
 export default ModalSellBtn;
 
+Button.displayName = 'ModalSellBtn.Button';
 ModalSellBtn.Button = Button;

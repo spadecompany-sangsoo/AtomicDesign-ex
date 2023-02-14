@@ -19,7 +19,7 @@ export default {
       options: ['default', 'destructive'],
       description: '버튼 상태',
     },
-    btnDsiabled: {
+    btnDisabled: {
       control: { type: 'boolean' },
       description: '버튼 dsiabled 처리 유무',
     },
@@ -31,7 +31,7 @@ export default {
   },
 };
 
-const Template: ComponentStory<typeof Button> = (agrs) => <Button {...agrs}></Button>;
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args}></Button>;
 
 export const Small = Template.bind({});
 Small.args = {
@@ -39,25 +39,25 @@ Small.args = {
   className: '',
   btnSize: 'small',
   btnState: 'default',
-  btnDsiabled: false,
+  btnDisabled: false,
 };
 
-export const medium = Template.bind({});
-medium.args = {
+export const Medium = Template.bind({});
+Medium.args = {
   text: '버튼',
   className: '',
   btnSize: 'medium',
   btnState: 'default',
-  btnDsiabled: false,
+  btnDisabled: false,
 };
 
-export const fr_1 = Template.bind({});
-fr_1.args = {
+export const Fr_1 = Template.bind({});
+Fr_1.args = {
   text: '버튼',
   className: '',
   btnSize: 'fr_1',
   btnState: 'default',
-  btnDsiabled: false,
+  btnDisabled: false,
 };
 
 export const Destructive = Template.bind({});
@@ -66,5 +66,5 @@ Destructive.args = {
   className: '',
   btnSize: 'small',
   btnState: 'destructive',
-  btnDsiabled: false,
+  btnDisabled: false,
 };

@@ -12,8 +12,8 @@ export default {
   },
 };
 
-export const Default: ComponentStory<typeof TitleLarge> = (agrs) => (
-  <TitleLarge {...agrs}></TitleLarge>
+export const Default: ComponentStory<typeof TitleLarge> = (args) => (
+  <TitleLarge {...args}></TitleLarge>
 );
 
 Default.args = {
