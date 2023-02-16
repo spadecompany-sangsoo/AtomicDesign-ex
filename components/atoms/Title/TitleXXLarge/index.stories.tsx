@@ -18,3 +18,10 @@ export const Default: ComponentStory<typeof TitleXXLarge> = (args) => (
 Default.args = {
   title: 'XXLarge',
 };
+
+Default.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/a1ayJF0iePE1lKl8hiintO/Untitled?node-id=9%3A2&t=ds7TfPNFJyVu86YY-1',
+  },
+};

@@ -10,7 +10,6 @@
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook -s public",
     "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
-
   },
   "dependencies": {
     "@next/font": "13.1.6",
@@ -41,6 +40,7 @@
     "babel-loader": "^8.3.0",
     "chromatic": "^6.17.0",
     "eslint-plugin-storybook": "^0.6.10",
-    "prettier": "2.8.3"
+    "prettier": "2.8.3",
+    "storybook-addon-designs": "^6.3.1"
   }
 }
