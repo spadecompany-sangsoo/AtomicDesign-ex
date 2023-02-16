@@ -1,6 +1,31 @@
 import ModalSellBtn from './index';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import Button from '../../atoms/Button';
+import DocModalSellBtn from './index.doc';
+
+export default {
+  title: 'MOLECULES/ModalSellBtn',
+  component: DocModalSellBtn,
+};
+
+export const Default = () => (
+  <DocModalSellBtn>
+    <Button
+      btnSize={'small'}
+      btnState={'destructive'}
+      btnDisabled={false}
+      btnOnClick={() => console.log('click')}
+      text={'취소'}
+    ></Button>
+    <Button
+      btnSize={'small'}
+      btnState={'default'}
+      btnDisabled={false}
+      btnOnClick={() => console.log('click')}
+      text={'확인'}
+    ></Button>
+  </DocModalSellBtn>
+);
 
 // export default {
 //   title: 'MOLECULES/ModalSellBtn',
